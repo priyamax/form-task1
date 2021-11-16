@@ -1,0 +1,143 @@
+
+body{
+    padding: 0px;
+    overflow-x: hidden;
+}
+.label{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+   
+}
+#txtcontainer{
+    text-align:left;
+    padding:0px;
+    margin: 0px;
+    display: grid;
+    grid-auto-flow: column;
+    height: 25px;
+    border-color: lightgray;
+   
+}
+#paragraph{
+display: flex;
+grid-auto-flow: column;
+font-size: 12px;
+gap: 20.5em;
+}
+
+
+#email{
+    height: 25px;
+    border-color: lightgray;
+}
+#first{
+    margin:0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-color: lightgray;
+    
+    
+}
+
+#last{
+   
+     margin-left:20px;
+     font-family:'Times New Roman', Times, serif;
+     font-size: 18px;
+     border-color: lightgray;
+}
+.astr::after{
+    content:'*';
+    color:red;
+
+}
+.rate {
+float: left;
+height: 30px;
+padding-top: 0px;
+border-radius: 4px;
+
+}
+.rate:not(:checked) > input {
+position:absolute;
+top:-9999px;
+}
+.rate:not(:checked) > label {
+float:right;
+width:1em;
+overflow:hidden;
+white-space:nowrap;
+cursor:pointer;
+font-size:32px;
+color:#ccc;
+
+}
+.rate:not(:checked) > label:before {
+content: '★ ';
+}
+.rate > input:checked ~ label {
+color: #EEAC82;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+color: #EEAC82;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+color: #EEAC82;
+}
+.Name{
+    border-radius:10px;
+    margin:0px;
+    border-color: #ccc;
+    font-size: 18px;
+    border-color: lightgray;
+   margin-top:5px;
+text-align:left; 
+font-family:'Times New Roman', Times, serif;
+}
+.text{
+    margin:0px;
+    font-size: 18px;
+    text-align:left; 
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+table{
+    border-collapse:collapse;
+    width: 80%;
+}
+
+#tableheader{
+    text-align: center;
+}
+td{
+    height: 20px;
+    width: 160px;
+    text-align: center;
+    vertical-align: middle;
+}
+#bgcolorgray{
+    background-color: #F1F1F1;
+}
+
+#textarea{
+    width:50%;
+    border-radius: 1px;
+    height: 150px;
+    border-color: lightgray;
+}
+#submit{
+    font-size: 20px;
+    margin:20px;
+    margin-left: 0px;
+    padding: 6px;
+    border-color: lightgray;
+    font-family:'Times New Roman', Times, serif;
+}

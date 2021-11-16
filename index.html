@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Survey form </title>
+    <link rel="stylesheet" href="style.css" >
+   
+</head>
+<body>
+   <form>
+    <div class='label'> 
+       <label  for ='name'><span class='astr'><b>Name</b></span></label>
+    </div> 
+        <input type="text" id='first'  size='22'  required>  </input> 
+        <input type="text" id='last'  size='22' required></input> 
+    <div id='paragraph'>
+        <p>First</p>
+        <p>Last</p>
+    </div>
+   
+    <div class='label'>
+        <label  for ='email'><span class='astr'><b>Email</b></span></label> <br>
+    </div>
+    <input type="email" id='email' size='69'   required>
+    <div class='label'> 
+        <label  for ='experience'><span class='astr'><b>Your Experience</b></span></label> <br>
+     </div>
+     <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" >4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" >2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" >1 star</label><br>
+      </div>
+       
+       <div class ='text'> 
+           <br> <br>
+           <p>Overall,how would you rate your experience with us?</p>
+        </div>
+        <div class='label'> 
+            <label  for ='experience'><span class='astr'><b>How satisfied are you with</b></span></label> <br>
+        </div>
+        
+    <table > 
+        <tr id='tableheader'>
+            <th> </th>
+            <th>Very Unsatisfied</th>
+            <th>Unsatisfied</th>
+            <th>Neural</th>
+            <th>Satisfied</th>
+            <th>Very Satisfied</th>
+        </tr>
+        <tr id='bgcolorgray'>
+            <td style="text-align:left;font-size: 18px;padding: 8px; font-family:'Times New Roman', Times, serif;">Purchase <br></td>
+           <td ><input type='radio 'name="radgroup" value="A"> </td>  
+           <td><input type='radio'name="radgroup" value="B"> </td>     
+           <td><input type='radio'name="radgroup" value="C"> </td>     
+           <td><input type='radio'name="radgroup" value="D"> </td>
+           <td><input type='radio'name="radgroup" value="E"> </td>           
+        </tr>
+        <tr>
+            <td  style="text-align:left;font-size: 18px;padding: 8px; font-family:'Times New Roman', Times, serif;">Service</td>
+            <td><input type='radio' name="radgroup1" value="F"> </td>     
+            <td ><input type='radio' name="radgroup1" value="G"> </td>     
+            <td><input type='radio' name="radgroup1" value="H"> </td>     
+            <td><input type='radio' name="radgroup1" value="I"> </td>
+            <td><input type='radio' name="radgroup1" value="K"> </td>     
+        </tr>
+
+        <tr id='bgcolorgray'>
+            <td  style="text-align:left;font-size: 18px;padding: 8px; font-family:'Times New Roman', Times, serif;">Company Overall</td>
+            <td><input type='radio'  name="radgroup2" value="L"> </td>     
+            <td ><input type='radio'  name="radgroup2" value="M"> </td>     
+            <td ><input type='radio'  name="radgroup2" value="N"> </td>     
+            <td ><input type='radio'  name="radgroup2" value="O"> </td>     
+            <td ><input type='radio' name="radgroup1" value="P"> </td>
+        </tr>
+    </table>
+    
+    <div class='label'> 
+        <label  for ='experience'><span class='astr'><b>How likely are you to</b></span></label> <br>
+     </div>
+    <table  > 
+        <tr id='tableheader'>
+            <th></th>
+            <th>Very Unlikely</th>
+            <th>Unlikely</th>
+            <th>Neural</th>
+            <th>Likely</th>
+            <th>Very likely</th>
+        </tr>
+
+        <tr id="bgcolorgray">
+            <td style="text-align:left;font-size: 18px;padding: 8px; font-family:'Times New Roman', Times, serif;">Buy again <br></td>
+           <td ><input type='radio'name="radgroup3" value="A"> </td>  
+           <td><input type='radio'name="radgroup3" value="B"> </td>     
+           <td ><input type='radio'name="radgroup3" value="C"> </td>     
+           <td><input type='radio'name="radgroup3" value="D"> </td>
+           <td><input type='radio'name="radgroup3" value="E"> </td>           
+        </tr>
+        <tr>
+            <td style="text-align:left;font-size: 18px;padding: 8px; font-family:'Times New Roman', Times, serif;" >Recommend <br> our products </td>
+            <td><input type='radio' name="radgroup4" value="F"> </td>     
+            <td><input type='radio' name="radgroup4" value="G"> </td>     
+            <td><input type='radio' name="radgroup4" value="H"> </td>     
+            <td><input type='radio' name="radgroup4" value="I"> </td>     
+            <td><input type='radio'name="radgroup3" value="J"> </td>
+        </tr>
+        <tr id="bgcolorgray">
+            <td style="text-align:left;font-size: 18px;padding: 8px; font-family:'Times New Roman', Times, serif;">Recommend <br>our company</td>
+            <td><input type='radio'  name="radgroup5" value="K"> </td>     
+            <td><input type='radio'  name="radgroup5" value="L"> </td>     
+            <td><input type='radio'  name="radgroup5" value="M"> </td>     
+            <td><input type='radio'  name="radgroup5" value="N"> </td>     
+            <td><input type='radio'name="radgroup3" value="O "> </td>        
+        </tr>
+    </table>
+    <div class='label'> 
+        <label  for ='experience'><b>Additional comments or suggestions</b></label> <br>
+     </div>
+     <textarea  id='textarea'> </textarea>
+     <br>
+     <button id='submit'>Submit</button>
+   </form>
+</body>
+</html>
